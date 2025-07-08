@@ -1,0 +1,71 @@
+:root {
+  --color-fondo: #D2E0FB;
+  --color-header: #F9F3CC;
+  --color-tarjeta: #8EACCD;
+  --color-texto: #1B1A55;
+  --blanco: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+header {
+  background-color: var(--color-header);
+  text-align: center;
+  padding: 2em 1em 1em;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header p {
+  margin: 0.5em 0 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5em;
+  padding: 2em;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.tarjeta {
+  background-color: var(--color-tarjeta);
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 1em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+  transform: scale(1.03);
+}
+
+.tarjeta img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.tarjeta h3 {
+  margin: 0.8em 0 0;
+  color: var(--blanco);
+}
+
+footer {
+  background-color: var(--color-header);
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+  color: #555;
+}
